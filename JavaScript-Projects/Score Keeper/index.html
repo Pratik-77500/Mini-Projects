@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Mini-Projects/JavaScript-Projects/Score Keeper/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="image">
+            <img src="/Mini-Projects/JavaScript-Projects/Score Keeper/image-ping-pong.jpg" alt="photo">
+        </div>
+
+        <div class="header">
+            <h1>Ping Pong Score Keeper</h1>
+        </div>
+
+        <div class="details">
+            <div class="score">
+                <span class="player1Score">0</span>
+                <span class="to">to</span>
+                <span class="player2Score">0</span>
+            </div>
+
+            <p class="para">
+                use the buttons below to keep score
+            </p>
+
+            <div class="rounds">
+                <level for="count">Playing to : </level>
+                <select name="roundCount" id="count">
+                    <option value="null">enter value</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <!-- <div class="player1">Player1 +1</div>
+            <div class="player2">Player2 +1</div>
+            <div class="reset">Reset</div> -->
+
+            <button class="player1">Player1 +1</button>
+            <button class="player2">Player2 +1</button>
+            <button class="reset">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="/Mini-Projects/JavaScript-Projects/Score Keeper/script.js"></script>
+</body>
+</html>
