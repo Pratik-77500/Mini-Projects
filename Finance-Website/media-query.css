@@ -1,0 +1,145 @@
+@media(max-width: 900px){
+
+/* utility classes */  
+
+.container{
+   max-width: 800px;
+   margin: auto;
+}
+
+.content-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
+}
+
+.content-container .image{
+   width: 100%;
+   height: 50%;
+   flex-grow: 1;
+   
+   overflow: hidden;
+}
+
+.content-container .content{
+   width: 100%;
+    height: 50%;
+    flex-grow: 1;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* 1.1 navbar styling */
+
+#navbar .container{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+}
+
+#navbar .nav-btn a{
+   padding:  20px 10px;
+}
+
+
+/* 2 main stlying */
+
+/* 2.1 highlight points styling */
+
+#high-light .container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   padding: 40px 20px;
+}
+
+
+/* 2.3 high-light gallery styling */
+
+#gallery .container .gallery-content .gallery-1,
+#gallery .container .gallery-content .gallery-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+#gallery .container .gallery-content .image{
+   width: 100%;
+   overflow: hidden;
+   margin-bottom: 10px;
+}
+
+#gallery .container .gallery-content .gallery-1{
+   margin-bottom: 0; 
+}
+
+#gallery .container .para-2, 
+#gallery .container h2,
+#gallery .container .para-1{
+   text-align: center;
+}
+
+
+/* 2.5 highlight team styling */
+
+#team .container .images{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#team .container .images .img-1,
+#team .container .images .img-2,
+#team .container .images .img-3{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: var(--f-normal);
+}
+
+#team .container .para-1,
+#team .container .para-2, 
+#team .container h2{
+   text-align: center;
+}
+
+
+}
+
+
+@media(max-width: 360px){
+
+   /* 1.1 navbar styling */
+
+   #navbar .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+   }
+
+   #navbar ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+}
