@@ -1,0 +1,7 @@
+@media (max-width:390px) {
+   
+.password-display .copy .copy-text{
+   display: none;
+}
+
+}
