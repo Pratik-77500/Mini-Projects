@@ -1,0 +1,214 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   font-family: 'Work Sans', sans-serif;
+}
+
+#wrapper{
+   height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #003566;
+}
+
+.container{
+   width: 90%;
+   max-width: 400px;
+}
+
+
+/* h1 */
+.name{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 600;
+
+   margin-bottom: 0.7rem;
+
+   color: white;
+}
+
+
+/* password display */
+.password-display{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   padding: 0.45rem 0.95rem;
+   border-radius: 7px;
+
+   background-color: #001d3d;
+
+   margin-bottom: 0.7rem;
+}
+
+.password-display .password{
+   flex-grow: 1;
+
+   font-size: 1rem;
+
+   background-color: #001d3d;
+   color: #ffd60a;
+
+   border: none;
+}
+
+.password-display .copy{
+   background-color: #001d3d;
+   color: #ffd60a;
+
+   font-size: 1rem;
+
+   border: none;
+}
+
+.copy-text{
+   visibility: hidden;
+
+   display: inline-block;
+
+   padding: 0.4rem;
+   border-radius: 1rem;
+
+   margin-right: 0.55rem;
+}
+
+
+/* password creation */
+.password-creation{
+   padding: 0.95rem;
+   border-radius: 7px;
+
+   background-color: #001d3d;
+   color: white;
+
+   margin-bottom: 0.7rem;
+}
+
+/* password-length */
+.password-length{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-bottom: 0.7rem;
+}
+
+.password-length p{
+   color: #ffd60a;
+   
+   font-size: 1.2rem;
+}
+
+.password-length h2{
+   font-size: 1.2rem;
+}
+
+
+/* passowrd length slider */
+.length-slider{
+   margin-bottom: 0.7rem;
+}
+
+/* range slider */
+.length-slider .slider{
+   width: 100%;
+
+   accent-color: #ffd60a;
+ }
+
+
+ /* checkboxes */
+ .checkbox-div{
+   margin: 5px;
+
+   display: flex;
+ }
+
+ .checkbox-div label{
+   margin-left: 5px;
+ }
+
+ .div-4{
+   margin-bottom: 0.7rem;
+ }
+
+ .checkbox-div input{
+   accent-color: #ffd60a;
+ }
+
+
+/* strength */
+.strength{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-bottom: 0.7rem;
+}
+
+.strength h2{
+   font-size: 1.2rem;
+}
+
+.strength .indicater{
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+
+   background-color: grey;
+}
+
+
+/* generate button */
+.generate-button{
+   text-align: center;
+}
+
+.generate-button .generate-password{
+   width: 100%;
+
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 500;
+
+   margin-bottom: 0.3rem;
+   padding: 0.5rem;
+
+   background-color: #ffd60a;
+   color: #001d3d;
+
+   border-radius: 10px;
+
+}
+
+
+/* error msg */
+.error-msg{
+   visibility: hidden;
+
+   width: 100%;
+
+   display: inline-block;
+   text-align: center;
+
+   padding: 0.4rem;
+   margin-top: 0.2rem;
+
+   border-radius: 1rem;
+
+   background-color: #003566;
+   color: #ffd60a;
+}
+
+
+/* visibility toggle class */
+.copy-visible{
+   visibility: visible;
+}
