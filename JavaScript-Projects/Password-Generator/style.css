@@ -52,12 +52,27 @@
    flex-grow: 1;
 
    font-size: 1rem;
+   letter-spacing: 1px;
 
    background-color: #001d3d;
    color: #ffd60a;
 
    border: none;
+   outline: none;
 }
+
+::placeholder {
+   color: #ffd60a;
+   opacity: 1; /* Firefox */
+
+   letter-spacing: 1px;
+ }
+ 
+ ::-ms-input-placeholder { /* Edge 12 -18 */
+   color: #ffd60a;
+
+   letter-spacing: 1px;
+ }
 
 .password-display .copy{
    background-color: #001d3d;
