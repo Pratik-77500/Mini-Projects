@@ -73,6 +73,8 @@ button.addEventListener("click", ()=>{
       password = "";
       passwordDisplay.value = password;
 
+      strengthIndicator.style.backgroundColor = "grey";
+      
       errorMsg();
 
       return;
