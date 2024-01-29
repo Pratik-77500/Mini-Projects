@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Wizard | Pratik</title>
+
+   <script src="https://kit.fontawesome.com/64264fe4d8.js" crossorigin="anonymous"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+   
+   <section id="wrapper">
+
+      <main class="container">
+
+         <!-- name -->
+         <h1 class="name">
+            Weather Wizard
+         </h1>
+
+         <!-- location type -->
+         <section class="location-type">
+            <button class="your-location">
+               Your Weather
+            </button>
+            <button class="search-location">
+               Search Weather
+            </button>
+         </section>
+
+         <!-- display container -->
+         <section class="display-container">
+
+            <!-- search bar   -->
+            <!-- default = hidden, visible when clicked on search location -->
+            <section class="search-bar">
+               <input type="text" class="search">
+               <button class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+            </section>
+
+            <section class="weather-to-show">
+
+               <!-- loader -->
+               <!-- default = visible, gets hidden when response from the api is recieved -->
+               <section class="waiting-loader">
+                  <img src="/Images/green_style.gif" alt="loader image">
+               </section>
+
+               <!-- error msg -->
+               <!-- default = hidden, visible when error happens -->
+               <scetion class="error-msg">
+                  <img src="/Images/error-icon-25239.png" alt="">
+               </scetion>
+
+
+               <!-- weather display -->
+               <!-- default = hidden, visible when response from the api is recieved -->
+               <section class="weather-display">
+                  <!-- city name -->
+                  <section class="city-name">
+                     Your City
+                  </section>
+
+                  <!-- city weather -->
+                  <section class="city-weather">
+                     <div class="condition">Condition</div>
+                     <div class="condition-img">
+                        <img src="" alt="">
+                     </div>
+                  </section>
+
+                  <!-- temp display -->
+                  <section class="temp-display">
+                     <span class="temp">00.00</span>
+                     <span class="degree">&deg;C</span>
+                  </section>
+
+                  <!-- other display -->
+                  <section class="other-display">
+                     <!-- wind speed -->
+                     <section class="wind-speed other-type">
+                        <i class="fa-solid fa-wind other-icon"></i>
+                        <p class="other-name">Wind Speed</p>
+                        <div class="other-value">
+                           <span class="value" id="wind-speed">00.00</span>
+                           <span class="value-icon">kph</span>
+                        </div>
+                     </section>
+
+                     <!-- humidity -->
+                     <section class="humidity other-type">
+                        <i class="fa-solid fa-droplet other-icon"></i>
+                        <p class="other-name">Humidity</p>
+                        <div class="other-value">
+                           <span class="value" id="humidity">00</span>
+                           <span class="value-icon">%</span>
+                        </div>
+                     </section>
+
+                     <!-- clouds -->
+                     <section class="clouds other-type">
+                        <i class="fa-solid fa-cloud other-icon"></i>
+                        <p class="other-name">Clouds</p>
+                        <div class="other-value">
+                           <span class="value" id="clouds">00</span>
+                           <span class="value-icon">%</span>
+                        </div>
+                     </section>
+
+                  </section>
+
+               </section>
+
+            </section> 
+            
+         </section>
+
+
+      </main>
+
+   </section>
+
+
+   <script src="/app.js"></script>
+</body>
+</html>
